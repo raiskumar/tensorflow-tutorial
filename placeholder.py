@@ -1,6 +1,10 @@
 import tensorflow as tf
 import random as ran
 
+'''
+Placeholder: A value that is unassigned, but will be initialized by the session wherever it is run.
+This can't be modified.
+'''
 
 def sum_two_constants():
     '''

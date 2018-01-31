@@ -3,6 +3,7 @@ import tensorflow as tf
 '''
 Variables in TensorFlow are in-memory buffers containing tensors 
 which have to be explicitly initialized and used in-graph to maintain state across session. 
+Just like normal python variables which can be modified.
 '''
 
 x = tf.constant(35, name='x')
