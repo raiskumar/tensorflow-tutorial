@@ -7,10 +7,10 @@ print "TensorFlow Version=", tf.__version__
 # Create TensorFlow object called tensor
 helloWorld = tf.constant("Hello, TensorFlow!")  # node
 
-'''
+"""
 To actually evaluate the above node, we need to run computational graph with Session.
 Session encapsulates the control and state of the Tensorflow runtime
-'''
+"""
 
 # Approach 1
 session = tf.Session()
