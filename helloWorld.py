@@ -4,7 +4,8 @@ import tensorflow as tf
 print "TensorFlow Version=", tf.__version__
 
 # If you need constants with specific values inside your training model, then the constant object can be used
-helloWorld = tf.constant("Hello, TensorFlow!", name="helloWorld", dtype=tf.string)  # node
+# Create TensorFlow object called tensor
+helloWorld = tf.constant("Hello, TensorFlow!")  # node
 
 '''
 To actually evaluate the above node, we need to run computational graph with Session.
