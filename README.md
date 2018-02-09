@@ -17,5 +17,8 @@ hello = tf.constant('Hello, TensorFlow')
 
 Above is a 0-dimenstion String tensor and it's constant so its value will never change. 
 
+### Session
+As discussed above, TensorFlow has two phases. In second phase the tensor's get evaluated using Session. So, it's basically environment for running a graph. It's also in charge of allocating the graph to GPU or CPU for evalution. 
+
 
 
