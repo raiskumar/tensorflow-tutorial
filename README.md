@@ -8,4 +8,14 @@ Tensorflow works by first defining and describing our model in abstract, and the
 1. Construction Phase
 2. Execution Phase
 
+### Tensor
+In Tensorflow, data like integer, float, and Strings are not handled like other programming languages. These values get encapsulated into an object called as Tensor. 
+
+`
+hello = tf.constant('Hello, TensorFlow')
+`
+
+Above is a 0-dimenstion String tensor and it's constant so its value will never change. 
+
+
 
