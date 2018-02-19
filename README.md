@@ -22,6 +22,7 @@ As discussed above, TensorFlow has two phases. In second phase the tensors get e
 
 ```
 hello = tf.constant('Hello, TensorFlow')
+
 with tf.Session() as session:
     result = session.run(hello)
     print result
