@@ -45,3 +45,5 @@ with tf.Session() as sess:
 
 The above example shows the tensor x being set to the string "Hello, world" in the run method. Use the feed_dict parameter in tf.session.run() to set the placeholder tensor.
 
+*Note: Once initialized, you can't modify placeholder tensors*
+
