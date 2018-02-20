@@ -1,6 +1,6 @@
 ### TensorFlow
 
-A library for DATAFLOW Programming or massive array manipulation.
+A library for DATAFLOW Programming or massive array manipulation. Created by Google for Machine Learning and Deep Learning systems. 
 
 Tensorflow works by first defining and describing our model in abstract, and then, when we are ready, we make it reallity using session. The description of the model is known as *Computational Graph* in Tensorflow.  In the Computation Graph, the execution is NOT performed, though it looks so. *In fact, event the variables are not initialized.* 
 
@@ -47,3 +47,17 @@ The above example shows the tensor x being set to the string "Hello, world" in t
 
 *Note: Once initialized, you can't modify placeholder tensors*
 
+### Variables
+Just like normal Python variables, TensorFlow has mechanism to declare variables which can be modified. This is required as the constants and placeholders don't allow you to change their value once initialized. 
+
+```
+x = tf.Variable(5)
+
+init = tf.global_variables_initializer()
+with tf.Session() as sess:
+    sess.run(init)  # variables gets initialized here.
+```
+
+This tensor stores its state in the session, so we must initialize the state of the tensor manually using method global_variables_initializer(). We need to to call sess.run(init) to actually initialize the variables. 
+
+tf.Variable class is instrumental in training the neural network by allowing to modify the Weights and Bias, initial values needs to be choosen though. 
