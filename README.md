@@ -62,5 +62,6 @@ This tensor stores its state in the session, so we must initialize the state of 
 
 tf.Variable class is instrumental in training the neural network by allowing to modify the Weights and Bias, initial values needs to be choosen though. 
 
-#### Nice Links
+
+### Nice Links
 https://hackernoon.com/machine-learning-with-tensorflow-8873fdee2b68
