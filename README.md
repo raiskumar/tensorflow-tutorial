@@ -61,3 +61,6 @@ with tf.Session() as sess:
 This tensor stores its state in the session, so we must initialize the state of the tensor manually using method global_variables_initializer(). We need to to call sess.run(init) to actually initialize the variables. 
 
 tf.Variable class is instrumental in training the neural network by allowing to modify the Weights and Bias, initial values needs to be choosen though. 
+
+#### Nice Links
+https://hackernoon.com/machine-learning-with-tensorflow-8873fdee2b68
